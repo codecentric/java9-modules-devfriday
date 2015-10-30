@@ -12,4 +12,9 @@ public class SlowNetworkSocket extends NetworkSocket {
     public void close() throws IOException {
 
     }
+
+    @Override
+    public String printVersion() {
+        return "1.0";
+    }
 }
