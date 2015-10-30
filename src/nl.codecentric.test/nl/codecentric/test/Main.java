@@ -8,6 +8,6 @@ public class Main {
     public static void main(String[] args) {
 //        World.greet();
         NetworkSocket s = NetworkSocket.open();
-        System.out.println(s.getClass());
+        System.out.println(s.getClass() + " version: " + s.printVersion());
     }
 }

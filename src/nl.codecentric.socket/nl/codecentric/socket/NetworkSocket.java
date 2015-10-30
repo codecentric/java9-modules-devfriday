@@ -26,4 +26,6 @@ public abstract class NetworkSocket implements Closeable {
         }
         return provider.openNetworkSocket();
     }
+
+    public abstract String printVersion();
 }
