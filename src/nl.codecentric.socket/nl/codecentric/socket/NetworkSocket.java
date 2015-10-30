@@ -21,6 +21,9 @@ public abstract class NetworkSocket implements Closeable {
         }
 
         NetworkSocketProvider provider = iter.next();
+        for (NetworkSocketProvider networkSocketProvider : sl) {
+            System.out.println(networkSocketProvider.openNetworkSocket().getClass());
+        }
         return provider.openNetworkSocket();
     }
 }
